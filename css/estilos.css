@@ -1,0 +1,112 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+body{
+    background: #6e6e6e;
+}
+.bg-gris{
+    background: #aaa; 
+}
+.cont_card{
+    background: #aaa;
+    margin: 10% auto;
+    width: 80%;
+    height: 500px;
+    position: relative;
+    border-radius: 20px;
+    border: 1px solid rgb(83, 83, 83);
+    overflow: hidden;
+}
+
+.cont_card .imagen{
+    background: lightblue;
+    width: 100%;
+    height: 500px;
+    border-radius: 10%;
+    border: 2px solid rgb(38, 86, 102);
+    position: absolute;
+    top: -60%;
+    right: -20%;
+    transform: rotate(60deg);
+    overflow: hidden;
+}
+
+.cont_card .imagen img{
+    width: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    transform: rotate(-60deg);
+    position: absolute;
+    bottom: -55%;
+    right:-30%;
+    opacity: 0.8;
+}
+
+.header nav{
+    position: relative;
+    z-index: 10;
+    color: rgb(38, 86, 102);
+}
+
+.navbar{
+    border-bottom: 2px solid rgb(38, 86, 102);
+}
+
+.content{
+    width: 50%;
+    position: absolute;
+    margin: 5% 2%;
+}
+
+.content h4,p{
+    color: white;
+    margin: 5% 0;
+}
+
+.content .form{
+    margin: 15% 0;
+}
+
+.content .text{
+    background: #fff;
+    padding: 5px;
+    border-radius: 15px;
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+}
+
+.content .text input[type="text"],
+.content .text input[type="submit"]{
+    border: none;
+    outline: none;
+    background: transparent;
+    margin: 0px 0 0 10px;
+}
+
+.content .text input[type="text"]{
+    width: 100%;
+}
+
+.content .text input[type="submit"]{
+    background: rgb(38, 86, 102);
+    width: 150px;
+    border-radius: 15px;
+    color: white;
+    cursor: pointer;
+}
+
+.content .text input[type="submit"]:hover{
+    background: rgb(65, 133, 156);
+}
+
+.cont_card footer{
+    position: absolute;
+    bottom: 0;
+    right: 2%;
+}
